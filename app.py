@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask_cors import CORS
 from dotenv import load_dotenv
@@ -64,6 +65,7 @@ from routes.pin_routes import pin_bp
 app.register_blueprint(pin_bp)
 
 app.register_blueprint(hotel_bp)
+
 @app.route("/")
 
 def home():
@@ -73,5 +75,10 @@ if __name__ == "__main__":
     with app.app_context():
         db.create_all()
 
-    app.run(debug=True, use_reloader=False)
-
+    port = int(os.environ.get("PORT", 5000))
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=False
+    )
+  
