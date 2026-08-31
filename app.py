@@ -66,7 +66,7 @@ app.register_blueprint(pin_bp)
 
 app.register_blueprint(hotel_bp)
 
- @app.route("/")
+@app.route("/")
 def home():
     return "PakExplorer AI Backend is Running!"
 
