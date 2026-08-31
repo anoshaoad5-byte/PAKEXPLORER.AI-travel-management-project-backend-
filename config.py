@@ -4,7 +4,7 @@ import ssl
 class Config:
     SECRET_KEY = os.environ.get("SECRET_KEY", "pakexplorer-secret-key")
 
-   SQLALCHEMY_DATABASE_URI = (os.environ.get("DATABASE_URL") or "").strip()
+    SQLALCHEMY_DATABASE_URI = (os.environ.get("DATABASE_URL") or "").strip()
 
     _ssl_context = ssl.create_default_context()
     _ssl_context.check_hostname = False
