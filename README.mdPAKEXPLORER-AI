@@ -1,0 +1,8 @@
+pAKEXPLORER-AI is an AI-powered travel management system for Pakistan that helps users discover destinations, plan trips, and create personalized itineraries based on budget and travel preferences. Built with Flask, React, MySQL, and AI integration, it includes a Vedhi AI chatbot, hotel and transport information, and WhatsApp support.
+Features: destinations, trip planner, budget itinerary, Vedhi chatbot, WhatsApp integration
+
+Tech stack: Python, Flask, React/Vite, MySQL, HTML/CSS/JavaScript, Groq API
+
+
+
+Research paper mention: “Research manuscript prepared on this system."
